@@ -1,0 +1,41 @@
+{
+  "name": "passport-http-api-token-bearer",
+  "version": "1.0.1",
+  "description": "HTTP Bearer authentication strategy for Passport.",
+  "keywords": [
+    "passport",
+    "auth",
+    "authn",
+    "authentication",
+    "authz",
+    "authorization",
+    "http",
+    "bearer",
+    "token",
+    "oauth"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mabc224/passport-http-api-token-bearer.git"
+  },
+  "bugs": {
+    "url": "http://github.com/mabc224/passport-http-api-token-bearer/issues"
+  },
+  "author": {
+    "name": "Arsalan",
+    "email": "mabc224@gmail.com"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
+  "main": "./lib",
+  "dependencies": {
+    "passport-strategy": "1.x.x"
+  },
+  "engines": {
+    "node": ">= 0.4.0"
+  }
+}
