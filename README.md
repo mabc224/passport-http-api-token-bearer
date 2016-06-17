@@ -67,6 +67,8 @@ application:
 
       app.all('/api/*', function(req, res, next){
           passport.authenticate('token-bearer', { session: false }, function(err, user, info) {
+            if (info.statusCode == 200) return next();
+            else if (!info.statusCode) return res.status(401).json({ error: info });
             return res.status(info.statusCode).json({ error: info.error, message: info.message, result: info.result });
           })(req, res);
       });
